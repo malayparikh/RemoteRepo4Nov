@@ -1,0 +1,102 @@
+C:\Users\malay\Desktop\Local_Folder>git init
+Initialized empty Git repository in C:/Users/malay/Desktop/Local_Folder/.git/
+
+C:\Users\malay\Desktop\Local_Folder>dir
+ Volume in drive C is Windows-SSD
+ Volume Serial Number is 26DF-C556
+
+ Directory of C:\Users\malay\Desktop\Local_Folder
+
+11/04/2024  06:18 PM    <DIR>          .
+11/04/2024  06:14 PM    <DIR>          ..
+11/04/2024  06:14 PM                36 file1.txt
+11/04/2024  06:15 PM                18 file2.java
+               2 File(s)             54 bytes
+               2 Dir(s)  18,939,326,464 bytes free
+
+C:\Users\malay\Desktop\Local_Folder>git add .
+
+C:\Users\malay\Desktop\Local_Folder>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file1.txt
+        new file:   file2.java
+
+
+C:\Users\malay\Desktop\Local_Folder>git commit -m "first commit on github"
+[master (root-commit) 456cdb6] first commit on github
+ 2 files changed, 4 insertions(+)
+ create mode 100644 file1.txt
+ create mode 100644 file2.java
+
+C:\Users\malay\Desktop\Local_Folder>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\malay\Desktop\Local_Folder>git remote add origin https://github.com/malayparikh/RemoteRepo4Nov.git
+
+C:\Users\malay\Desktop\Local_Folder>git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 306 bytes | 306.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/malayparikh/RemoteRepo4Nov.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\malay\Desktop\Local_Folder>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+        modified:   file2.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\malay\Desktop\Local_Folder>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+        modified:   file2.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\malay\Desktop\Local_Folder>git add .
+
+C:\Users\malay\Desktop\Local_Folder>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file1.txt
+        modified:   file2.java
+
+
+C:\Users\malay\Desktop\Local_Folder>git commit -m "new changes done"
+[master 5f3f5f6] new changes done
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+C:\Users\malay\Desktop\Local_Folder>git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 366 bytes | 366.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/malayparikh/RemoteRepo4Nov.git
+   456cdb6..5f3f5f6  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
